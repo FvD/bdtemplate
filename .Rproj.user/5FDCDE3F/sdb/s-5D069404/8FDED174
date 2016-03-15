@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "# render the book to PDF and EPUB\nfor (fmt in c('bookdown::pdf_book', 'bookdown::epub_book')) {\n  res = bookdown:::Rscript(c(\n    '-e', shQuote(sprintf(\"bookdown::render_book('index.Rmd', '%s', quiet = TRUE)\", fmt))\n  ))\n  if (res != 0) stop('Failed to compile the book to ', fmt)\n}\n\nif (Sys.which('kindlegen') == '') {\n  if (.Platform$OS.type == 'windows' || Sys.info()[['sysname']] == 'Darwin')\n    stop('This script does not support Windows or Mac OS X')\n  bookdown:::in_dir(tempdir(), {\n    download.file('http://kindlegen.s3.amazonaws.com/kindlegen_linux_2.6_i386_v2_9.tar.gz', 'kindle.tar.gz', mode = 'wb')\n    system2('tar', c('zxf', 'kindle.tar.gz'))\n    dir.create('~/bin', showWarnings = FALSE)\n    file.rename('kindlegen', '~/bin/kindlegen')\n    if (Sys.which('kindlegen') == '')\n      Sys.setenv(PATH = paste0('~/bin:', Sys.getenv('PATH')))\n  })\n}\n\nbookdown::kindlegen()\n",
+    "created" : 1458052114223.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "69023022",
+    "id" : "8FDED174",
+    "lastKnownWriteTime" : 1458051567,
+    "last_content_update" : 1458051567,
+    "path" : "~/Documents/GitHub/bdtemplate/build-all.R",
+    "project_path" : "build-all.R",
+    "properties" : {
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

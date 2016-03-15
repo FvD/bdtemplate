@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "---\nknit: \"bookdown::preview_chapter\"\n---\n\n`r if (knitr:::is_html_output()) '# Bibliography{-}'`\n\n```{r include=FALSE}\nknitr::write_bib(c(\n  .packages(), 'knitr', 'rmarkdown'), 'packages.bib')\n```\n",
+    "created" : 1458052107700.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "830062207",
+    "id" : "E262985F",
+    "lastKnownWriteTime" : 1458051692,
+    "last_content_update" : 1458051692,
+    "path" : "~/Documents/GitHub/bdtemplate/02-references.Rmd",
+    "project_path" : "02-references.Rmd",
+    "properties" : {
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

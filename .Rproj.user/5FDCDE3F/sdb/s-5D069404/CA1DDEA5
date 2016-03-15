@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "---\nknit: \"bookdown::preview_chapter\"\n---\n\n# First Chapter\n\nThis is the first sentence of the first chapter.",
+    "created" : 1458052028586.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3347737318",
+    "id" : "CA1DDEA5",
+    "lastKnownWriteTime" : 1458052104,
+    "last_content_update" : 1458052104505,
+    "path" : "~/Documents/GitHub/bdtemplate/01-first-chapter.Rmd",
+    "project_path" : "01-first-chapter.Rmd",
+    "properties" : {
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "gitbook:\n\tRscript -e \"bookdown::render_book('index.Rmd', 'bookdown::gitbook')\"\n\nall:\n\tRscript build-all.R\n",
+    "created" : 1458052001000.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1676894428",
+    "id" : "ACA4D9E7",
+    "lastKnownWriteTime" : 1458051567,
+    "last_content_update" : 1458051567,
+    "path" : "~/Documents/GitHub/bdtemplate/Makefile",
+    "project_path" : "Makefile",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "makefile"
+}

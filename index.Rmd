@@ -1,0 +1,22 @@
+--- 
+title: "My Bookdown Book"
+author: "A. Template"
+date: "`r Sys.Date()`"
+knit: "bookdown::render_book"
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE, formatR.indent = 2)
+lapply(c('DT'), function(pkg) {
+  if (!requireNamespace(pkg)) install.packages(pkg)
+})
+if (packageVersion('DT') < '0.1.45') devtools::install_github('rstudio/DT')
+```
+
+# Introduction
+
+This is the introduction to my book.
